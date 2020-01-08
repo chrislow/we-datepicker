@@ -1,0 +1,16 @@
+<br>
+
+<ng-template #dpft>
+  <button type="button" class="btn btn-link btn-link--orange text-uppercase is-orange">OK</button>
+  <button type="button" class="btn btn-link btn-link--orange text-uppercase is-gray">Abbrechen</button>
+</ng-template>
+
+<div class="datepicker">
+  <div class="datepicker-header">
+    <p class="title">Datum</p>
+    <p class="year">{{ model.year }}</p>
+    <h2 class="fulldate">{{ currentDate | date:'EE, dd MMMM' : undefined : 'de'}}</h2>
+  </div>
+  <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next" [dayTemplate]="dpdt" [footerTemplate]="dpft" (select)="onDateSelect($event)">
+  </ngb-datepicker>
+</div>
