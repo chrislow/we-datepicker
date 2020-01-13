@@ -104,9 +104,12 @@ ngb-datepicker {
   color: #07112a !important;
 }
 
+.ngb-dp-day > div {
+  border-radius: 990px !important;
+}
+
 .ngb-dp-day > div.bg-primary {
   background:  $orange !important;
-  border-radius: 990px !important;
 }
 
 ngb-datepicker select {
