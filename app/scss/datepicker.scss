@@ -10,9 +10,9 @@ $darkblue: #000460;
 $gray: #cdcdcd;
 
 .datepicker {
-  width: 275px;
+  width: 294.55px;
   .datepicker-header {
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     background: $orange;
     box-shadow: 0 19px 39px 0 rgba(0, 0, 0, 0.11);
     border-top-left-radius: 1.7px;
@@ -43,12 +43,13 @@ $gray: #cdcdcd;
       line-height: normal;
       letter-spacing: normal;
       color: #ffffff;
+      margin-top: -10px;
     }
   }
 }
 
 ngb-datepicker {
-  padding: 20px 0 15px 0 !important;
+  padding: 10px 10px 15px 10px !important;
   border: none !important;
   border-radius: 0 !important;
   box-shadow: 0 19px 39px 0 rgba(0, 0, 0, 0.11) !important;
@@ -57,15 +58,20 @@ ngb-datepicker {
   border-bottom-right-radius: 1.7px !important;
 }
 
+ngb-datepicker-month-view {
+  padding-bottom: 10px;
+}
+
 .ngb-dp-header {
   background: $white !important;
   border-radius: 0 !important;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .ngb-dp-weekdays {
   background: $white !important;
   border: none !important;
+  height: 25px;
 }
 
 .ngb-dp-navigation-chevron {
@@ -106,6 +112,7 @@ ngb-datepicker {
 
 .ngb-dp-day > div {
   border-radius: 990px !important;
+  font-size: 12px !important;
 }
 
 .ngb-dp-day > div.bg-primary {
